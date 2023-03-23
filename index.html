@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doubles Js Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menuInst">
+        <img src="./assets/images/arrows.png" />
+        <h2>How to Play the Game:</h2>
+        <p>
+          Use your arrow keys to move the tiles. If two tiles with the same
+          number touch. They merge and add the two numbers together.
+        </p>
+        <p><strong>You Win:</strong> If you reach 2048!</p>
+        <p><strong>You Lose:</strong> If all tiles are filled with numbers!</p>
+      </div>
+    </div>
+
+    <div class="game hidden">
+      <div id="details">
+        <h1>Doubles</h1>
+        <div id="scoreBox">
+          <h2>Score:</h2>
+          <div id="score">0</div>
+        </div>
+      </div>
+      <nav id="nav"></nav>
+      <div id="gameBoard"></div>
+      <div class="modal hidden">
+        <img src="./assets/images/arrows.png" />
+        <button class="closeModalBtn">&times;</button>
+        <h2>How to Play the Game:</h2>
+        <p>
+          Use your arrow keys to move the tiles. If two tiles with the same
+          number touch. They merge and add the two numbers together.
+        </p>
+        <p><strong>You Win:</strong> If you reach 2048!</p>
+        <p><strong>You Lose:</strong> If all tiles are filled with numbers!</p>
+      </div>
+      <div class="modal win hidden">
+        <button class="closeModalBtn closeWin">&times;</button>
+        <h2>Congratulations! You Won</h2>
+      </div>
+      <div class="modal lose hidden">
+        <button class="closeModalBtn closeLose">&times;</button>
+        <h2>You Lose! Try Again!</h2>
+      </div>
+      <div class="overlay hidden"></div>
+      <script src="./script.js"></script>
+    </div>
+  </body>
+
+  <footer>
+    <p>
+      Images used are from
+      <a
+        href="https://www.flaticon.com/free-icon/arrows_1782551?term=keyboard+arrow&page=1&position=1&origin=search&related_id=1782551"
+        >Flaticon</a
+      >
+    </p>
+  </footer>
+</html>
